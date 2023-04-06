@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://code.jquery.com https://ssl.gstatic.com 
+        https://apisandbox.openbankproject.com 'unsafe-eval'; style-src 'self' 
+        code.jquery.com 'unsafe-inline'; media-src *; img-src 'self' code.jquery.com data: content:;">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>  
+   <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    </head>
+    <body>
+            <div class="app">
+            <div id="deviceready">
+                    <div data-role="page">
+
+    <!-- LOGIN FORM CREATION -->
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="">
+                    <h2>MegTech</h2>
+                  <center><img src="img/logo.png" width="100" height="100"></center>
+                    <div class="input-box">
+                      <input id="uname" type="text"  placeholder="Email"  required>   
+                    </div>
+                    <div class="input-box">
+                        <input id="pwd" type="password"  placeholder="Password" required>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox" name="" id="">Remember Me</label>
+                        <a href="#" >Forget Password?</a>
+                    </div>
+                    <button id="submit">Login</button>
+                    <h1 id="indicator"></h1>
+                    <div class="create-account">
+                        <p>Don't yet have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box register">
+                <form action="">
+                   <h2>Sign Up</h2>
+                    <div class="input-box">
+                       
+                        <input type="text"  placeholder="Username" required>
+                    </div>
+                    <div class="input-box">
+                        
+                        <input  type="text"  placeholder="Email" required>
+                       
+                    </div>
+                    <div class="input-box">
+                       
+                        <input  type="password"  placeholder="Password" required >
+                    </div>
+                    <div class="input-box">
+                       
+                        <input type="password"  placeholder="Confirm Password"required>
+                 
+                  </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">I agree with this statement</label>
+                    </div>
+                    <button class="btn">Sign up</button>
+                    <div class="create-account">
+                        <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+ <div data-role="page" id="page1">
+
+     <!-- <div id="bankList">List of Banks</div>  -->
+    <div id="databutton">
+        <!-- <p><button id="databutton">List of Banks</button></p> -->
+        <h2 >List of Banks</h2>
+        <table data-role="table" class="table-stripe ui-responsive">
+            <thead>
+           <tr>
+            <th data-priority="1">Name</th> 
+            <th data-priority="2">Short Name</th> 
+            <th data-priority="3">ID</th>
+        </tr>
+            </thead>
+            <tbody id="tablebody">
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td> 
+                  
+                    
+                </tr>
+            </tbody>
+           </table>
+    </div> 
+</div> 
+     <div data-role="page" id="page2">
+
+
+        <div id="databutton1">
+           
+            <h2 >Accounts details</h2>
+            <table data-role="table" class="table-stripe ui-responsive">
+                <thead>
+               <tr>
+                <th data-priority="1">Id</th> 
+                <th data-priority="2">Label</th> 
+                <th data-priority="3">View_Transactions</th> 
+                
+            </tr>
+                </thead>
+                <tbody id="tablebody1">
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                </tbody>
+               </table>
+        </div>
+    </div>
+
+    <!-- <div data-role="page" id="page3">
+
+
+        <div id="databutton3">
+           
+            <h2 >Accounts details</h2>
+            <table data-role="table" class="table-stripe ui-responsive">
+                <thead>
+               <tr>
+                <th data-priority="1">Id</th> 
+                <th data-priority="2">Label</th> 
+                <th data-priority="3">View_Transactions</th> 
+                
+            </tr>
+                </thead>
+                <tbody id="tablebody2">
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                </tbody>
+               </table>
+        </div>
+    </div>
+
+    <div data-role="page" id="page4">
+
+
+        <div id="databutton4">
+           
+            <h2 >Accounts details</h2>
+            <table data-role="table" class="table-stripe ui-responsive">
+                <thead>
+               <tr>
+                <th data-priority="1">Id</th> 
+                <th data-priority="2">Label</th> 
+                <th data-priority="3">View_Transactions</th> 
+                
+            </tr>
+                </thead>
+                <tbody id="tablebody3">
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                </tbody>
+               </table>
+        </div>
+    </div> -->
+
+
+</div>
+</div>
+     <script src="cordova.js"></script> 
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
